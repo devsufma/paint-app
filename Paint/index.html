@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Paint</title>
+		<link rel="stylesheet" type="text/css"  href="style.css">
+
+		<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+	</head>
+
+	<body>
+
+		<nav>
+	    <div class="nav-wrapper blue">
+	      <a class="brand-logo">Paint</a>
+
+	    </div>
+	  </nav
+
+		<div>
+			<table width="400" height="80" cellspacing="10">
+				<tr>
+					<td><button class="waves-effect waves-light btn blue" id="btnPoint">Ponto</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnLine">Linha</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnCircle">Circulo</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnPolygon">Polígono</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnPick">Selecionar</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnTranslate">Transladar</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnScale">Escala</button></td>
+					<td><button class="waves-effect waves-light btn blue" id="btnClear">Limpar</button></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="canvas_div" class="canvas_div">
+			<canvas id="canvas" height="600" width="800">
+			</canvas>
+		</div>
+		<script src="tools.js"></script>
+		<script src="point.js"></script>
+		<script src="line.js"></script>
+		<script src="circle.js"></script>
+		<script src="polygon.js"></script>
+		<script src="code.js"></script>
+	</body>
+</html>
